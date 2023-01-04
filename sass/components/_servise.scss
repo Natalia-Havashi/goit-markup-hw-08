@@ -1,0 +1,28 @@
+
+.order-service{
+    max-width: 1600px;
+    margin: 0 auto;
+    background:var(--background-color);
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    margin-bottom: 94px; 
+}
+.order-service__title{
+width: 696px;
+font-weight: 900;
+font-size: 44px;
+line-height:calc(60 / 44);
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color:var(--text-color);
+margin: 0 auto;
+
+}

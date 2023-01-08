@@ -1,5 +1,8 @@
-.work{
-    padding-bottom: 94px;
+.work {  padding-bottom: 94px;
+    
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
 }
 .points{
     padding-top: 94px;

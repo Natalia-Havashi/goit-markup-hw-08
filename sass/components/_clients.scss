@@ -24,6 +24,7 @@ letter-spacing: 0.03em;
 color:var(--name-color);
 margin-bottom: 30px;
 
+
 @media screen and (min-width: $desktop){
 font-size: 36px;
 line-height:calc(42 / 36);
@@ -33,9 +34,11 @@ margin-bottom: 50px;
 }
 .list-client{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
+
 .company-link{
     display: flex;
     align-items: center;
@@ -58,8 +61,8 @@ height: 92px;
 }
 
 @media screen and (min-width: $desktop) {
-    width: 170px;
-    height: 92px;
+width: 170px;
+height: 92px;
 }
 
 }

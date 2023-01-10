@@ -4,7 +4,11 @@
 }
 
 .nav__list{
-    display: flex;
+    display: none;
+    @media screen and (min-width:768px) {
+        display: flex; 
+    }
+    
 }
 .nav__item{
 &:not(:last-child) {
@@ -51,10 +55,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: rgba(33, 150, 243, 1);
    }
 .contact{
+    display: none;
+    
+    @media screen and(min-width:1200px) {
     display: flex;
     margin-right: 50px;
     justify-content: flex-end;
-    margin-left: auto;
+    margin-left: auto; 
+    }
+   
 }
 .contact__link,
 .contact__link--mail{

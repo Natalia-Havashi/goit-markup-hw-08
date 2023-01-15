@@ -24,9 +24,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 450px;
+    max-height: 609px;
+    padding: 40px;
+
+    @media screen and (min-width:$desktop) {
     width: 528px;
     max-height: 581px;
-    padding: 40px;
+    }
         
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -108,7 +113,7 @@
             }
     .input{
     position: relative;
-    width: 448px;
+    width: 370px;
     height: 40px;
      padding-left: 42px;
     align-items: center;
@@ -117,6 +122,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
+
+    @media screen and (min-width:$desktop) {
+        width: 448px;
+    
+    }
             }
     .modal-icon{
     display: block;
@@ -160,11 +170,15 @@
     outline: none;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-    width: 448px;
+    width: 370px;
     height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width:$desktop) {
+        width: 448px;
+    }
     }
     
     .texteria:focus{

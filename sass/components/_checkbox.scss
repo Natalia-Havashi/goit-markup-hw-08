@@ -8,6 +8,7 @@
     }
     
     .checkbox-input{
+    display: none;
     appearance: none;
     
     width: 16px;
@@ -35,29 +36,33 @@
     
     }
     .checkbox-input:checked + .form-checkbox-icon .unchecked{
-        opacity: 0;
+        opacity: 1;
        
     }
     .checkbox-input:checked + .form-checkbox-icon .checked{
-        opacity: 1;
+        opacity: 0;
     }
     
     .form-checkbox-icon .checked {
-    opacity: 0;
+    opacity: 1;
     transition-property: var(--background-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       
     
-    .form-agreement-text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height:calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: #757575;
-    
-    }
+      .form-agreement-text{
+        font-weight: 400;
+        font-size: 12px;
+        line-height:calc(14 / 12);
+        letter-spacing: 0.03em;
+        color: #757575;
+        
+        @media screen and (min-width:$desktop) {
+            font-size: 14px;
+        line-height: 1,71; 
+        }
+        }
     
     .contract{
     color: rgba(33, 150, 243, 1);

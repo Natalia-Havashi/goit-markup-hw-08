@@ -963,6 +963,7 @@ img {
 }
 
 .checkbox-input {
+  display: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -989,15 +990,15 @@ img {
 }
 
 .checkbox-input:checked + .form-checkbox-icon .unchecked {
-  opacity: 0;
-}
-
-.checkbox-input:checked + .form-checkbox-icon .checked {
   opacity: 1;
 }
 
-.form-checkbox-icon .checked {
+.checkbox-input:checked + .form-checkbox-icon .checked {
   opacity: 0;
+}
+
+.form-checkbox-icon .checked {
+  opacity: 1;
   -webkit-transition-property: var(--background-color);
   transition-property: var(--background-color);
   -webkit-transition-duration: 250ms;
@@ -1008,10 +1009,16 @@ img {
 
 .form-agreement-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form-agreement-text {
+    font-size: 14px;
+    line-height: 1, 71;
+  }
 }
 
 .contract {
@@ -1052,7 +1059,7 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-top: 20px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .button-sing-up {
@@ -1068,6 +1075,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1229,8 +1237,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  max-height: 581px;
+  width: 450px;
+  max-height: 609px;
   padding: 40px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1240,6 +1248,12 @@ img {
   transition: -webkit-transform 200ms ease-in-out 200ms;
   transition: transform 200ms ease-in-out 200ms;
   transition: transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out 200ms;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1316,7 +1330,7 @@ img {
 
 .input {
   position: relative;
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   -webkit-box-align: center;
@@ -1329,6 +1343,11 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .input {
+    width: 448px;
+  }
 }
 
 .modal-icon {
@@ -1373,11 +1392,16 @@ img {
   outline: none;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .texteria {
+    width: 448px;
+  }
 }
 
 .texteria:focus {

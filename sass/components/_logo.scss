@@ -29,19 +29,22 @@ color:var(--text-color)
 }
 
 .logo-footer{
-display: inline-block;
+display: flex;
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 24px;
 line-height:calc(28 / 24);
 letter-spacing: 0.03em;
 color:var(--logo-color);
-margin-bottom: 20px;
+margin-bottom: 28px;
+justify-content: center;
 
 
 @media screen and(min-width:$desktop) {
+display: inline-block;
 font-size: 26px;
 line-height: 1,19;
+margin-bottom: 20px;
 }
 }
             

@@ -27,11 +27,9 @@ margin-left: 70px;
 }
 }
 
-.contact{
+.contact-footer{
 display: flex;
-width: 232px;
-height: 72px;
-
+flex-direction: column;
 text-align: center;
 justify-content: center;
 
@@ -53,8 +51,8 @@ font-style: normal;
 }
 
 .adress-mail{
-    margin-bottom: 9px;
-    margin-top: 9px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 .footer-contact{
 font-weight: 400;

@@ -59,7 +59,7 @@
     aria-expanded="false"
     aria-controls="mobile-menu"
   >
-  <svg class="" width="40" height="40">
+  <svg class="burger-menu" width="40" height="40">
     <use href="./images/icons.svg#icon-menu"></use>
     </svg>
   </button>
@@ -126,17 +126,47 @@
       <div class="container">
         <h2 class="work-list">Чим ми займаємося</h2>
         <ul class="photo-work list">
-          <li class="photo-list"><img src="./images/work3.jpg" alt="Робота 1" width="370" height="294">
+          <li class="photo-list">
+            <img 
+            srcset="
+            ./images/img_370.jpg 370w,
+            ./images/img_740.jpg 740w
+            "
+            sizes="(min-width: 1200px) 370px, 100vw"
+            src="./images/img_370.jpg" 
+            alt="Робота 1" 
+            width="370" 
+            height="294">
           <div class="overlay-box">
             <p class="overlay-text">Десктопні додатки</p>
           </div>
           </li>
-          <li class="photo-list"><img src="./images/work1.jpg" alt="Робота 2" width="370" height="294">
+          <li class="photo-list">
+            <img 
+            srcset="
+            ./images/img_370-1.jpg 370w,
+            ./images/img_740-1.jpg 740w
+            "
+            sizes="(min-width: 1200px) 370px, 100vw"
+            src="./images/img_370-1.jpg" 
+            alt="Робота 2" 
+            width="370" 
+            height="294">
           <div class="overlay-box">
             <p class="overlay-text">Мобільні додатки</p>
           </div>
           </li>
-          <li class="photo-list"><img src="./images/work2.jpg" alt="Робота 3" width="370" height="294">
+          <li class="photo-list">
+            <img 
+            srcset="
+            ./images/img_370-2.jpg 370w,
+            ./images/img_740-2.jpg 740w
+            "
+            sizes="(min-width: 1200px) 370px, 100vw"
+            src="./images/img_370-2.jpg" 
+            alt="Робота 3" 
+            width="370" 
+            height="294">
           <div class="overlay-box">
             <p class="overlay-text">Дизайнерські рішення</p>
           </div>
@@ -150,20 +180,35 @@
         <h2 class="work-team">Наша команда</h2>
         <ul class="team-list list">
           <li class="list-name">
-            <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="450" />
+            <img 
+            srcset="
+            ./images/img_270.jpg 270w,
+            ./images/img_354.jpg 354w,
+            ./images/img_450.jpg 450w,
+            ./images/img_540.jpg 540w,
+            ./images/img_708.jpg 708w,
+            ./images/img_900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+
+            src="./images/img_540.jpg" 
+            alt="Ігор Дем'яненко" 
+            width="450"
+            height="460"
+            />
             <div class="team-card">
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="position">Product Designer</p>
-              <ul class="socials list">
-                <li class="socials-item">
-                  <a class="socials-link link" href="https://www.instagram.com/" aria-label="Instagram icon"
-                    target="_blank" rel="nofollow noopener noreferrer">
-                    <svg class="socials-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials-item">
+            <h3 class="team-name">Ігор Дем'яненко</h3>
+            <p class="position">Product Designer</p>
+            <ul class="socials list">
+            <li class="socials-item">
+            <a class="socials-link link" href="https://www.instagram.com/" aria-label="Instagram icon"
+            target="_blank" rel="nofollow noopener noreferrer">
+            <svg class="socials-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+            </a>
+            </li>
+            <li class="socials-item">
                   <a class="socials-link link" href="https://twitter.com/" aria-label="Twitter icon" target="_blank"
                     rel="nofollow noopener noreferrer">
                     <svg class="socials-icon" width="20" height="20">
@@ -191,7 +236,21 @@
             </div>
           </li>
           <li class="list-name">
-            <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="450" />
+            <img 
+            srcset="
+            ./images/img_270-1.jpg 270w,
+            ./images/img_354-1.jpg 354w,
+            ./images/img_450-1.jpg 450w,
+            ./images/img_540-1.jpg 540w,
+            ./images/img_708-1.jpg 708w,
+            ./images/img_900-1.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+            src="./images/img_450-1.jpg" 
+            alt="Ольга Рєпіна" 
+            width="450" 
+            height="460"
+            />
             <div class="team-card">
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="position">Frontend Developer</p>
@@ -232,7 +291,21 @@
             </div>
           </li>
           <li class="list-name">
-            <img src="./images/mukola.jpg" alt="Микола Тарасов" width="450" />
+            <img 
+            srcset="
+            ./images/img_270-2.jpg 270w,
+            ./images/img_354-2.jpg 354w,
+            ./images/img_450-2.jpg 450w,
+            ./images/img_540-2.jpg 540w,
+            ./images/img_708-2.jpg 708w,
+            ./images/img_900-2.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+            src="./images/img_450-2.jpg" 
+            alt="Микола Тарасов" 
+            width="450" 
+            height="460"
+            />
             <div class="team-card">
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="position">Marketing</p>
@@ -273,7 +346,21 @@
             </div>
           </li>
           <li class="list-name">
-            <img src="./images/mihaylo.jpg" alt="Михайло Єрмаков" width="450" />
+            <img 
+            srcset="
+            ./images/img_270-3.jpg 270w,
+            ./images/img_354-3.jpg 354w,
+            ./images/img_450-3.jpg 450w,
+            ./images/img_540-3.jpg 540w,
+            ./images/img_708-3.jpg 708w,
+            ./images/img_900-3.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+            src="./images/img_450-3.jpg" 
+            alt="Михайло Єрмаков" 
+            width="450" 
+            height="460"
+            />
             <div class="team-card">
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="position">UI Designer</p>
@@ -513,8 +600,8 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         
-        <svg width="19" height="19">
-          <use class="menu-close" href="./images/icons.svg#icon-close"></use>
+        <svg class="button-js-close" width="40" height="40">
+          <use href="./images/icons.svg#icon-close"></use>
           </svg>
       </button>
 

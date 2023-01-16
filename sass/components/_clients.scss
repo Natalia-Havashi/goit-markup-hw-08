@@ -1,7 +1,10 @@
 /* Client */
 .client-section{
+max-width: 480px;
 padding-top: 60px;
 padding-bottom: 60px;
+ 
+
 
 @media screen and (min-width: $tablet) {
 padding-top: 60px;

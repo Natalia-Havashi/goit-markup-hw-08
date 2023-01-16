@@ -18,5 +18,15 @@
  .contact{
     font-style: normal;
 }
+
+.burger-menu:hover,
+.burger-menu:focus {
+  color: #2196F3;
+  background-color:#FFFF;
+}
+  .burger-menu:hover{
+    fill: currentColor;
+  }
+
  
  

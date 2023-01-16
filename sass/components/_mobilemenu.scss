@@ -120,8 +120,19 @@ text-decoration: none;
     padding-right: 10px;
   }
 
-  .menu-close:hover{
-    background: #2196F3;
+.button-js-close {
+  transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+  .button-js-close:hover,
+.button-js-close:focus {
+  color: #2196F3;
+  background-color:#FFFF;
+}
+  .button-js-close:hover{
+    fill: currentColor;
   }
 
 

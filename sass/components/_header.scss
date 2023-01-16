@@ -1,21 +1,25 @@
 .header-studio{
+  height: 60px;
     border-bottom: 1px solid #ECECEC;
-    height: 60px;
+    
 
+    @media screen and (min-width:$tabet) {
+      height: 80px;
+    }
     @media screen and (min-width:$desktop) {
         height: 80px;
-        
-    }
-  
+        }
+       
 }
-    
- .header{
-     display: flex;
-     align-items: center;
-     
-     
+  
+.header{
+  display: flex;
+  align-items: center;
+  
+
  }
- .contact{
+ 
+     .contact{
     font-style: normal;
 }
 

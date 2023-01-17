@@ -55,7 +55,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     height: 4px;
     border-radius: 2px;
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     left: 0;
     background: #2196F3;
    }
@@ -65,12 +65,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .contact{
     display: none;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        
-        }
-    
+
     @media screen and(min-width:1200px) {
     font-style: normal;
     display: flex;
@@ -78,8 +73,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: flex-end;
     margin-left: auto; 
     }
-   
-}
+   }
+
+   @media screen and (min-width: 768px){
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+    }
+   }
+  
+
 .contact__link,
 .contact__link--mail{
 display: flex;
@@ -98,13 +103,19 @@ transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// @media screen and (min-width:$tablet) {
-//     padding-top: 21px;
-//     padding-bottom: 21px;
-// }
+@media screen and (min-width:$tablet) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 }
 .contact__link--mail{
     margin-right: 50px;
+
+    @media screen and (min-width:$tablet) {
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
 
 &:hover,
 &:focus{

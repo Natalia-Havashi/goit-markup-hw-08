@@ -5,8 +5,7 @@
  @media screen and (min-width:$tablet) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 30px;
+    gap: 30px 24px;
 }
 
 @media screen and (min-width: $desktop) {
@@ -22,10 +21,8 @@
 
 
 @media screen and (min-width:768px) {
-    
-    width: 356px;
+    flex-basis: calc((100% - 24px)/2);
     height: 256px;
-    display: flex;
     flex-wrap: wrap;
 }
     &:not(:last-child){

@@ -1,36 +1,31 @@
 .header-studio{
-  height: 60px;
-    border-bottom: 1px solid #ECECEC;
-    
-
-    @media screen and (min-width:$tabet) {
-      height: 80px;
+border-bottom: 1px solid #ECECEC;
     }
-    @media screen and (min-width:$desktop) {
-        height: 80px;
-        }
-       
-}
-  
+ 
 .header{
   display: flex;
   align-items: center;
-  
+  justify-content: center;
+  height: 60px;
 
- }
- 
-     .contact{
-    font-style: normal;
+@media screen and (min-width:$tablet) {
+ height: 80px;
 }
 
+@media screen and (min-width:$desktop) {
+height: 80px;
+} 
+  }
+ 
 .burger-menu:hover,
 .burger-menu:focus {
-  color: #2196F3;
-  background-color:#FFFF;
+ color: #2196F3;
+background-color:#FFFF;
 }
-  .burger-menu:hover{
-    fill: currentColor;
-  }
+
+.burger-menu:hover{
+fill: currentColor;
+ }
 
  
  

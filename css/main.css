@@ -1199,6 +1199,10 @@ img {
   }
 }
 
+.form {
+  width: 450px;
+}
+
 @media screen and (min-width: 1200px) {
   .baseline {
     display: -webkit-box;

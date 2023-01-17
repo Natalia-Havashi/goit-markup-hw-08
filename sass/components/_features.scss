@@ -12,30 +12,19 @@
     margin-bottom: 94px;
     flex-basis: 270px;
     display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
 
    }
  }
 
 
 .features__item{
-
-
 @media screen and (min-width:768px) {
-    flex-basis: calc((100% - 24px)/2);
+    flex-basis: calc((100% - 30px)/2);
     height: 256px;
     flex-wrap: wrap;
 }
-    &:not(:last-child){
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        &:not(:last-child){
-            margin-right: 30px;
-        }
-    }
-    
-   
 }
 .features__container{
     display: flex;

@@ -55,7 +55,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     height: 4px;
     border-radius: 2px;
     position: absolute;
-    bottom: 0px;
+    bottom: 1px;
     left: 0;
     background: #2196F3;
    }
@@ -64,25 +64,27 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 .contact{
     display: none;
-
+    
+    @media screen and (min-width: 768px)
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-left: auto;
+   }
 
     @media screen and(min-width:1200px) {
     font-style: normal;
     display: flex;
+    flex-direction: row;
     margin-right: 50px;
     justify-content: flex-end;
     margin-left: auto; 
     }
    }
 
-   @media screen and (min-width: 768px){
-    .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-    }
-   }
+  
+   
   
 
 .contact__link,
@@ -115,6 +117,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width:$tablet) {
         margin-right: auto;
         margin-bottom: 10px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 40px;
+        
     }
 
 &:hover,

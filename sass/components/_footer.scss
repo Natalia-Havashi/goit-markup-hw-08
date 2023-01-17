@@ -1,9 +1,9 @@
 /* FOOTER */
 .footer{
+max-width: 1600px;
 padding-top: 60px;
 padding-bottom: 60px;
 background:var(--footer-color);
-
 }
 
 .footer .container{
@@ -11,13 +11,13 @@ display: flex;
 align-items: center;
 flex-direction: column;
 
-@media screen and (min-width:$tablet) {
+@media screen and (min-width:1200px) {
     display: flex;
-   flex-wrap: wrap; 
-   
-   
+    align-items: baseline;
+    flex-direction: row;  
 }
 }
+
 
 .footer-container{
 display: flex;
@@ -25,34 +25,37 @@ flex-direction: column;
 align-items: center;
 margin-top: 60px;
 
-@media screen and (min-width:$desktop) {
-margin-right: auto;
-margin-left: 70px;
-    
-}
+@media screen and (min-width:$tablet) {
+    margin-top: 0;
 }
 
+@media screen and (min-width:$desktop) {
+    width: 206px;
+    height: 80px;
+    margin-right: 94px;
+    }
+}
 .contact-footer{
 display: flex;
 flex-direction: column;
 text-align: center;
 justify-content: center;
 
-    @media screen and (min-width:$desktop) {
-        font-style: normal;
-    }
+@media screen and (min-width:$desktop) {
+font-style: normal;
+text-align: left;
+}
 
 }
 
 .footer-form{
     width: 100%;
 
-    @media screen and(min-width:$tablet) {
-        width: 450px;
-        height: 156px;
-        margin-bottom: 60px;
-        
-    }
+@media screen and(min-width:$tablet) {
+width: 450px;
+height: 156px;
+
+}
 }
 
 .adress {
@@ -67,7 +70,12 @@ font-style: normal;
 .adress-mail{
     margin-bottom: 12px;
     margin-top: 12px;
+
+    @media screen and (min-width:$desktop) {
+    margin-bottom: 9px;
+    margin-top: 9px;
 }
+    }
 .footer-contact{
 font-weight: 400;
 font-size: 14px;
@@ -84,6 +92,7 @@ line-height:calc(16 / 14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
+
 
 }
 
@@ -127,4 +136,10 @@ background: #2196F3;
 }
 .socials-footer:hover{
 background: #2196F3;    
+}
+
+.footer-label {
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }

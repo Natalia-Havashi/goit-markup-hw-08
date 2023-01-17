@@ -9,8 +9,18 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (min-width:$desktop) {
+        text-align: start;
     }
-    
+    }
+    .baseline{
+        @media screen and (min-width:1200px) {
+            display: flex;
+            align-items: baseline;
+            width: 570px;
+        }
+    }
     .button-sing-up{
     display: flex;
     font-weight: 700;
@@ -30,6 +40,7 @@
 
     @media screen and (min-width:$desktop) {
         margin-left: 12px;
+        margin-right: 0;
     }
     }
     
@@ -46,10 +57,6 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
      border-radius: 4px;
-
-     @media screen and (min-width:$desktop) {
-        padding-left: 15px;
-     }
     }
     
     .icon-send{
@@ -58,4 +65,17 @@
     justify-content: center;
       
     }
-    
+    .tablet{
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            gap: 165px;
+        }
+
+        @media screen and (min-width:1200px) {
+            gap: 94px;
+        }
+    }
+   

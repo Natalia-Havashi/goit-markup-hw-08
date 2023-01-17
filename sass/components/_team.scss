@@ -32,18 +32,13 @@ text-align: center;
 letter-spacing: 0.03em;
 
 @media screen and (min-width:$tablet) {
-   width: 354px; 
-   height: 536px;
-   margin-bottom: 30px;
-}
+    flex-basis: calc((100% - 30px)/2);
+   
+    flex-wrap: wrap;
+    }
+   
 }
 
-
-@media screen and (min-width:$desktop) {
-   .list-name:not(:last-child) {
-    margin-right: 30px;
-   }
-}
 .work-list{
 font-weight: 700;
 font-size: 36px;
@@ -93,9 +88,11 @@ margin-bottom: 50px;
     gap: 30px;
     }
     
-        
-    @media screen and (min-width:1200px) {
-        display: flex;
+@media screen and (min-width:1200px) {
+display: flex;
+flex-wrap: nowrap;
+gap: 30px;
+
     }
 }
     

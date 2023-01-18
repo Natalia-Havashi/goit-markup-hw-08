@@ -20,12 +20,10 @@
     }
     
     .modal{
-    
-    width: calc(100% - 2 * 15px)
-    position: absolute;
+    width: calc(100% - 2 * 15px);
+    position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     max-height: 609px;
     padding: 40px;
     background: #FFFFFF;
@@ -34,11 +32,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
-    transition: transform 200ms ease-in-out 200ms;
+    transition: transform 200ms ease-in-out 200ms, 
+    transform 200ms ease-in-out ;
     }
     
     .backdrop.is-hidden .modal{
-        transform: translate(-50%, -40%);  
+        transform: translate(-50%, -50%) scale(1.2);  
     }
     
     .close-button{
@@ -84,7 +83,7 @@
     
     .label{
      position: relative;
-     display: inline-block;
+     display:block;
     margin-bottom: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -119,17 +118,16 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
   
-    @media (min-width: 479px) and (max-width: 1119px) {
-        width: 100%;
-    }
+   
     @media screen and (min-width:$mobile) {
         width: 370px;
     }
     @media screen and (min-width:$tablet) {
         width:370px
     }
+    
     @media screen and (min-width:$desktop) {
-        width: 448px;
+        max-width:448px;
     
     }
             }

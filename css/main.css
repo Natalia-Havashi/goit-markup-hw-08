@@ -496,7 +496,8 @@ img {
 }
 
 .order-service__title {
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
@@ -512,7 +513,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .order-service__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -641,11 +642,7 @@ img {
 .team-card {
   padding-top: 30px;
   padding-bottom: 24px;
-}
-@media screen and (min-width: 1200px) {
-  .team-card {
-    padding-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .list-name {
@@ -997,7 +994,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contact-footer {
-    font-style: normal;
     text-align: left;
   }
 }
@@ -1210,8 +1206,8 @@ img {
 }
 
 .form {
-  width: 450px;
-  max-width: 570px;
+  max-width: 450px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1276,7 +1272,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
-  margin-right: 15px;
   padding-left: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1291,6 +1286,16 @@ img {
 @media screen and (min-width: 480px) {
   .input-footer {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input-footer {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .input-footer {
+    margin-right: 15px;
   }
 }
 
@@ -1461,27 +1466,25 @@ img {
 }
 
 .modal {
-  max-width: 528px;
+  width: calc(100% - 30px);
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   max-height: 609px;
   padding: 40px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transition: -webkit-transform 200ms ease-in-out 200ms;
-  transition: -webkit-transform 200ms ease-in-out 200ms;
-  transition: transform 200ms ease-in-out 200ms;
-  transition: transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out 200ms;
+  -webkit-transition: -webkit-transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out 200ms, transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out 200ms, transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out;
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
 }
 
 .close-button {
@@ -1528,7 +1531,7 @@ img {
 
 .label {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-bottom: 10px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1566,11 +1569,6 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-@media (min-width: 479px) and (max-width: 1119px) {
-  .input {
-    width: 100%;
-  }
-}
 @media screen and (min-width: 480px) {
   .input {
     width: 370px;
@@ -1583,7 +1581,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .input {
-    width: 448px;
+    max-width: 448px;
   }
 }
 

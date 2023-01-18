@@ -20,6 +20,8 @@
     }
     
     .modal{
+    
+    width: calc(100% - 2 * 15px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,15 +29,11 @@
     width: 450px;
     max-height: 609px;
     padding: 40px;
-    
-@media screen and (max-width:479px) {
-    width: calc(100% - 2 * 15px);
-}
-    @media screen and (min-width:$desktop) {
-    width: 528px;
-    max-height: 581px;
-    }
-        
+
+   @media screen and (min-width:$desktop) {
+        width: 528px;
+        max-height: 581px;
+        }
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -126,7 +124,11 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
 
-    @media screen and (min-width:798px) {
+    @media screen and (min-width:$mobile) {
+        width: 
+        370px;
+    }
+    @media screen and (min-width:$tablet) {
         width:370px
     }
     @media screen and (min-width:$desktop) {

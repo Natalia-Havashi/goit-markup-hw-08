@@ -1460,6 +1460,8 @@ img {
 }
 
 .modal {
+  width: 450px;
+  width: calc(100% - 30px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1476,11 +1478,6 @@ img {
   transition: -webkit-transform 200ms ease-in-out 200ms;
   transition: transform 200ms ease-in-out 200ms;
   transition: transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out 200ms;
-}
-@media screen and (max-width: 479px) {
-  .modal {
-    width: calc(100% - 30px);
-  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1577,7 +1574,12 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 480px) {
+  .input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
   .input {
     width: 370px;
   }

@@ -139,7 +139,11 @@ background: #2196F3;
 }
 
 .footer-label {
+
+    @media screen {
+        
+    }
     @media screen and (min-width:1200px) {
-        width: 358px;
+       
     }
 }

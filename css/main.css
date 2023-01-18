@@ -1489,8 +1489,8 @@ img {
   width: calc(100% - 30px);
   max-width: 528px;
   position: absolute;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   max-height: 609px;

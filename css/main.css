@@ -1211,6 +1211,7 @@ img {
 
 .form {
   width: 450px;
+  max-width: 570px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1460,14 +1461,12 @@ img {
 }
 
 .modal {
-  width: 450px;
-  width: calc(100% - 30px);
+  max-width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
   max-height: 609px;
   padding: 40px;
   background: #FFFFFF;
@@ -1478,12 +1477,6 @@ img {
   transition: -webkit-transform 200ms ease-in-out 200ms;
   transition: transform 200ms ease-in-out 200ms;
   transition: transform 200ms ease-in-out 200ms, -webkit-transform 200ms ease-in-out 200ms;
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    max-height: 581px;
-  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1559,20 +1552,24 @@ img {
 }
 
 .input {
-  position: relative;
+  display: block;
+  max-width: 448px;
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media (min-width: 479px) and (max-width: 1119px) {
+  .input {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 480px) {
   .input {
@@ -1632,15 +1629,11 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   width: 100%;
+  max-width: 448px;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-@media screen and (min-width: 480px) {
-  .texteria {
-    width: 370px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .texteria {

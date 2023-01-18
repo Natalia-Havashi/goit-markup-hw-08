@@ -56,6 +56,10 @@ width: 450px;
 height: 156px;
 
 }
+@media screen and (min-width:1200px) {
+    max-width: 570px;
+    width: 100%;
+}
 }
 
 .adress {
@@ -138,12 +142,3 @@ background: #2196F3;
 background: #2196F3;    
 }
 
-.footer-label {
-
-    @media screen {
-        
-    }
-    @media screen and (min-width:1200px) {
-       
-    }
-}
